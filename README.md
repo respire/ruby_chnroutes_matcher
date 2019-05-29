@@ -33,7 +33,7 @@ matcher.domain_match?('zh.airbnb.com', nameservers: %w[8.8.4.4])
 
 ### lookup multiple domains
 ```.rb
-# you also can pass custom nameservers like #domain_match?
+# you can also pass custom nameservers like #domain_match?
 res = matcher.lookup(['zh.airbnb.com', 'www.bing.com'])
 puts res.to_yaml
 =>
